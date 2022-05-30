@@ -179,7 +179,8 @@
       ],
       "threshold": {
         "operator": "LESS_THAN",
-        "threshold": 72
+        "threshold": 72,
+        "units": "HOURS"
       },
       "typeName": "REPLICA_SET"
     },
