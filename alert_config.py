@@ -163,6 +163,7 @@ The file must contain a key called `alerts` which is an array of desired alert o
     publicKey = iAlertConfig['publicKey'], privateKey = iAlertConfig['privateKey'], ca_cert_path = iAlertConfig['ca_cert_path'])
  
   for project in projects['results']:
+    print("Reviewing alerts for %s project\n" % project["name"])
     currentAlerts = get(baseurl = iAlertConfig['omBaseUrl'], endpoint = '/groups/' + project['id'] + '/alertConfigs',
     publicKey = iAlertConfig['publicKey'], privateKey = iAlertConfig['privateKey'], ca_cert_path = iAlertConfig['ca_cert_path'])
  

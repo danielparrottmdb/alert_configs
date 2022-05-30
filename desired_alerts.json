@@ -237,7 +237,7 @@
     },
     {
       "enabled": true,
-      "eventTypeName": "TOO_FEW_HEALTHY_MEMBERS",
+      "eventTypeName": "TOO_MANY_unHEALTHY_MEMBERS",
       "matchers": [],
       "notifications": [
         {
@@ -252,8 +252,8 @@
         }
       ],
       "threshold": {
-        "operator": "LESS_THAN",
-        "threshold": 4
+        "operator": "GREATER_THAN",
+        "threshold": 0
       },
       "typeName": "REPLICA_SET"
     },
